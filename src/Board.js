@@ -54,7 +54,7 @@ class Board extends Component {
     for (let y = 0; y < nrows; y++) {
       let row = [];
       for (let x = 0; x < ncols; x++) {
-        row.push(true);
+        row.push(Math.random() < chanceLightStartsOn);
       }
       board.push(row);
     }
